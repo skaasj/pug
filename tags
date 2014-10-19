@@ -12,6 +12,8 @@ Align	flatbuffers/flatbuffers.h	/^  void Align(size_t elem_size) {$/;"	f	class:f
 AlignOf	flatbuffers/flatbuffers.h	/^template<typename T> size_t AlignOf() {$/;"	f	namespace:flatbuffers
 AssertScalarT	flatbuffers/flatbuffers.h	/^  template<typename T> void AssertScalarT() {$/;"	f	class:flatbuffers::FlatBufferBuilder
 BufferHasIdentifier	flatbuffers/flatbuffers.h	/^inline bool BufferHasIdentifier(const void *buf, const char *identifier) {$/;"	f	namespace:flatbuffers
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = $(DEBUG) $(FINAL) $(OPT) $(EXTRA_OPT)$/;"	m
 Check	flatbuffers/flatbuffers.h	/^  bool Check(bool ok) const {$/;"	f	class:flatbuffers::Verifier
 CheckField	flatbuffers/flatbuffers.h	/^  bool CheckField(voffset_t field) const {$/;"	f	class:flatbuffers::Table
 Clear	flatbuffers/flatbuffers.h	/^  void Clear() {$/;"	f	class:flatbuffers::FlatBufferBuilder
@@ -23,6 +25,8 @@ CreateVector	flatbuffers/flatbuffers.h	/^  template<typename T> Offset<Vector<T>
 CreateVector	flatbuffers/flatbuffers.h	/^  template<typename T> Offset<Vector<T>> CreateVector(const std::vector<T> &v){$/;"	f	class:flatbuffers::FlatBufferBuilder
 CreateVectorOfStructs	flatbuffers/flatbuffers.h	/^  template<typename T> Offset<Vector<const T *>> CreateVectorOfStructs($/;"	f	class:flatbuffers::FlatBufferBuilder
 Data	flatbuffers/flatbuffers.h	/^  const uint8_t *Data() const {$/;"	f	class:flatbuffers::Vector
+EXTRA_LIB_FLAGS	Makefile	/^	EXTRA_LIB_FLAGS = -framework Accelerate$/;"	m
+EXTRA_LIB_FLAGS	Makefile	/^EXTRA_LIB_FLAGS = -lpthread$/;"	m
 EndStruct	flatbuffers/flatbuffers.h	/^  uoffset_t EndStruct() { return GetSize(); }$/;"	f	class:flatbuffers::FlatBufferBuilder
 EndTable	flatbuffers/flatbuffers.h	/^  bool EndTable() {$/;"	f	class:flatbuffers::Verifier
 EndTable	flatbuffers/flatbuffers.h	/^  uoffset_t EndTable(uoffset_t start, voffset_t numfields) {$/;"	f	class:flatbuffers::FlatBufferBuilder
@@ -58,6 +62,7 @@ GetStructFromOffset	flatbuffers/flatbuffers.h	/^  const void *GetStructFromOffse
 IndirectHelper	flatbuffers/flatbuffers.h	/^template<typename T> struct IndirectHelper {$/;"	s	namespace:flatbuffers
 IndirectHelper	flatbuffers/flatbuffers.h	/^template<typename T> struct IndirectHelper<Offset<T>> {$/;"	s	namespace:flatbuffers
 IndirectHelper	flatbuffers/flatbuffers.h	/^template<typename T> struct IndirectHelper<const T *> {$/;"	s	namespace:flatbuffers
+LIB_FLAGS	Makefile	/^LIB_FLAGS = -larmadillo $(EXTRA_LIB_FLAGS)$/;"	m
 Length	flatbuffers/flatbuffers.h	/^  uoffset_t Length() const { return size(); }$/;"	f	class:flatbuffers::Vector
 LookupEnum	flatbuffers/flatbuffers.h	/^inline int LookupEnum(const char **names, const char *name) {$/;"	f	namespace:flatbuffers
 MANUALLY_ALIGNED_STRUCT	flatbuffers/flatbuffers.h	/^  #define MANUALLY_ALIGNED_STRUCT(/;"	d
@@ -66,6 +71,7 @@ MF	mf.h	/^struct MF $/;"	s	namespace:pug
 MFData	mf_data.h	/^struct MFData $/;"	s	namespace:pug
 MFLearner	mf_learner.h	/^struct MFLearner {$/;"	s	namespace:pug
 NotNested	flatbuffers/flatbuffers.h	/^  void NotNested() {$/;"	f	class:flatbuffers::FlatBufferBuilder
+OPT	Makefile	/^OPT = -O2 -std=c++11 -march=native -funroll-loops$/;"	m
 Offset	flatbuffers/flatbuffers.h	/^  Offset() : o(0) {}$/;"	f	struct:flatbuffers::Offset
 Offset	flatbuffers/flatbuffers.h	/^  Offset(uoffset_t _o) : o(_o) {}$/;"	f	struct:flatbuffers::Offset
 Offset	flatbuffers/flatbuffers.h	/^template<typename T> struct Offset {$/;"	s	namespace:flatbuffers
