@@ -1,0 +1,230 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddElement	flatbuffers/flatbuffers.h	/^  template<typename T> void AddElement(voffset_t field, T e, T def) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+AddOffset	flatbuffers/flatbuffers.h	/^  template<typename T> void AddOffset(voffset_t field, Offset<T> off) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+AddStruct	flatbuffers/flatbuffers.h	/^  template<typename T> void AddStruct(voffset_t field, const T *structptr) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+AddStructOffset	flatbuffers/flatbuffers.h	/^  void AddStructOffset(voffset_t field, uoffset_t off) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+Align	flatbuffers/flatbuffers.h	/^  void Align(size_t elem_size) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+AlignOf	flatbuffers/flatbuffers.h	/^template<typename T> size_t AlignOf() {$/;"	f	namespace:flatbuffers
+AssertScalarT	flatbuffers/flatbuffers.h	/^  template<typename T> void AssertScalarT() {$/;"	f	class:flatbuffers::FlatBufferBuilder
+BufferHasIdentifier	flatbuffers/flatbuffers.h	/^inline bool BufferHasIdentifier(const void *buf, const char *identifier) {$/;"	f	namespace:flatbuffers
+Check	flatbuffers/flatbuffers.h	/^  bool Check(bool ok) const {$/;"	f	class:flatbuffers::Verifier
+CheckField	flatbuffers/flatbuffers.h	/^  bool CheckField(voffset_t field) const {$/;"	f	class:flatbuffers::Table
+Clear	flatbuffers/flatbuffers.h	/^  void Clear() {$/;"	f	class:flatbuffers::FlatBufferBuilder
+ClearOffsets	flatbuffers/flatbuffers.h	/^  void ClearOffsets() { offsetbuf_.clear(); }$/;"	f	class:flatbuffers::FlatBufferBuilder
+CreateString	flatbuffers/flatbuffers.h	/^  Offset<String> CreateString(const char *str) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+CreateString	flatbuffers/flatbuffers.h	/^  Offset<String> CreateString(const char *str, size_t len) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+CreateString	flatbuffers/flatbuffers.h	/^  Offset<String> CreateString(const std::string &str) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+CreateVector	flatbuffers/flatbuffers.h	/^  template<typename T> Offset<Vector<T>> CreateVector(const T *v, size_t len) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+CreateVector	flatbuffers/flatbuffers.h	/^  template<typename T> Offset<Vector<T>> CreateVector(const std::vector<T> &v){$/;"	f	class:flatbuffers::FlatBufferBuilder
+CreateVectorOfStructs	flatbuffers/flatbuffers.h	/^  template<typename T> Offset<Vector<const T *>> CreateVectorOfStructs($/;"	f	class:flatbuffers::FlatBufferBuilder
+Data	flatbuffers/flatbuffers.h	/^  const uint8_t *Data() const {$/;"	f	class:flatbuffers::Vector
+EndStruct	flatbuffers/flatbuffers.h	/^  uoffset_t EndStruct() { return GetSize(); }$/;"	f	class:flatbuffers::FlatBufferBuilder
+EndTable	flatbuffers/flatbuffers.h	/^  bool EndTable() {$/;"	f	class:flatbuffers::Verifier
+EndTable	flatbuffers/flatbuffers.h	/^  uoffset_t EndTable(uoffset_t start, voffset_t numfields) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+EndVector	flatbuffers/flatbuffers.h	/^  uoffset_t EndVector(size_t len) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+EndianCheck	flatbuffers/flatbuffers.h	/^inline void EndianCheck() {$/;"	f	namespace:flatbuffers
+EndianScalar	flatbuffers/flatbuffers.h	/^template<typename T> T EndianScalar(T t) {$/;"	f	namespace:flatbuffers
+FLATBUFFERS_H_	flatbuffers/flatbuffers.h	/^#define FLATBUFFERS_H_$/;"	d
+FLATBUFFERS_LITTLEENDIAN	flatbuffers/flatbuffers.h	/^      #define FLATBUFFERS_LITTLEENDIAN /;"	d
+FLATBUFFERS_STRING	flatbuffers/flatbuffers.h	/^#define FLATBUFFERS_STRING(/;"	d
+FLATBUFFERS_STRING_EXPAND	flatbuffers/flatbuffers.h	/^#define FLATBUFFERS_STRING_EXPAND(/;"	d
+FLATBUFFERS_VERSION_MAJOR	flatbuffers/flatbuffers.h	/^#define FLATBUFFERS_VERSION_MAJOR /;"	d
+FLATBUFFERS_VERSION_MINOR	flatbuffers/flatbuffers.h	/^#define FLATBUFFERS_VERSION_MINOR /;"	d
+FLATBUFFERS_VERSION_REVISION	flatbuffers/flatbuffers.h	/^#define FLATBUFFERS_VERSION_REVISION /;"	d
+FieldIndexToOffset	flatbuffers/flatbuffers.h	/^inline voffset_t FieldIndexToOffset(voffset_t field_id) {$/;"	f	namespace:flatbuffers
+FieldLoc	flatbuffers/flatbuffers.h	/^  struct FieldLoc {$/;"	s	class:flatbuffers::FlatBufferBuilder
+Finish	flatbuffers/flatbuffers.h	/^  template<typename T> void Finish(Offset<T> root,$/;"	f	class:flatbuffers::FlatBufferBuilder
+FlatBufferBuilder	flatbuffers/flatbuffers.h	/^  explicit FlatBufferBuilder(uoffset_t initial_size = 1024)$/;"	f	class:flatbuffers::FlatBufferBuilder
+FlatBufferBuilder	flatbuffers/flatbuffers.h	/^class FlatBufferBuilder {$/;"	c	namespace:flatbuffers
+ForceDefaults	flatbuffers/flatbuffers.h	/^  void ForceDefaults(bool fd) { force_defaults_ = fd; }$/;"	f	class:flatbuffers::FlatBufferBuilder
+Get	flatbuffers/flatbuffers.h	/^  return_type Get(uoffset_t i) const {$/;"	f	class:flatbuffers::Vector
+GetBufferPointer	flatbuffers/flatbuffers.h	/^  uint8_t *GetBufferPointer() const { return buf_.data(); }$/;"	f	class:flatbuffers::FlatBufferBuilder
+GetEnum	flatbuffers/flatbuffers.h	/^  template<typename E> E GetEnum(uoffset_t i) const {$/;"	f	class:flatbuffers::Vector
+GetField	flatbuffers/flatbuffers.h	/^  template<typename T> T GetField(uoffset_t o) const {$/;"	f	class:flatbuffers::Struct
+GetField	flatbuffers/flatbuffers.h	/^  template<typename T> T GetField(voffset_t field, T defaultval) const {$/;"	f	class:flatbuffers::Table
+GetOptionalFieldOffset	flatbuffers/flatbuffers.h	/^  voffset_t GetOptionalFieldOffset(voffset_t field) const {$/;"	f	class:flatbuffers::Table
+GetPointer	flatbuffers/flatbuffers.h	/^  template<typename P> P GetPointer(voffset_t field) const {$/;"	f	class:flatbuffers::Table
+GetPointer	flatbuffers/flatbuffers.h	/^  template<typename T> T GetPointer(uoffset_t o) const {$/;"	f	class:flatbuffers::Struct
+GetRoot	flatbuffers/flatbuffers.h	/^template<typename T> const T *GetRoot(const void *buf) {$/;"	f	namespace:flatbuffers
+GetSize	flatbuffers/flatbuffers.h	/^  uoffset_t GetSize() const { return buf_.size(); }$/;"	f	class:flatbuffers::FlatBufferBuilder
+GetStruct	flatbuffers/flatbuffers.h	/^  template<typename P> P GetStruct(voffset_t field) const {$/;"	f	class:flatbuffers::Table
+GetStruct	flatbuffers/flatbuffers.h	/^  template<typename T> T GetStruct(uoffset_t o) const {$/;"	f	class:flatbuffers::Struct
+GetStructFromOffset	flatbuffers/flatbuffers.h	/^  const void *GetStructFromOffset(size_t o) const {$/;"	f	class:flatbuffers::Vector
+IndirectHelper	flatbuffers/flatbuffers.h	/^template<typename T> struct IndirectHelper {$/;"	s	namespace:flatbuffers
+IndirectHelper	flatbuffers/flatbuffers.h	/^template<typename T> struct IndirectHelper<Offset<T>> {$/;"	s	namespace:flatbuffers
+IndirectHelper	flatbuffers/flatbuffers.h	/^template<typename T> struct IndirectHelper<const T *> {$/;"	s	namespace:flatbuffers
+Length	flatbuffers/flatbuffers.h	/^  uoffset_t Length() const { return size(); }$/;"	f	class:flatbuffers::Vector
+LookupEnum	flatbuffers/flatbuffers.h	/^inline int LookupEnum(const char **names, const char *name) {$/;"	f	namespace:flatbuffers
+MANUALLY_ALIGNED_STRUCT	flatbuffers/flatbuffers.h	/^  #define MANUALLY_ALIGNED_STRUCT(/;"	d
+MF	mf.h	/^    MF(void) {}$/;"	f	struct:pug::MF
+MF	mf.h	/^struct MF $/;"	s	namespace:pug
+MFData	mf_data.h	/^struct MFData $/;"	s	namespace:pug
+MFLearner	mf_learner.h	/^struct MFLearner {$/;"	s	namespace:pug
+NotNested	flatbuffers/flatbuffers.h	/^  void NotNested() {$/;"	f	class:flatbuffers::FlatBufferBuilder
+Offset	flatbuffers/flatbuffers.h	/^  Offset() : o(0) {}$/;"	f	struct:flatbuffers::Offset
+Offset	flatbuffers/flatbuffers.h	/^  Offset(uoffset_t _o) : o(_o) {}$/;"	f	struct:flatbuffers::Offset
+Offset	flatbuffers/flatbuffers.h	/^template<typename T> struct Offset {$/;"	s	namespace:flatbuffers
+P_	mf.h	/^    arma::mat P_;   \/\/ n_feat_ X n_users_ latent matrix$/;"	m	struct:pug::MF
+Pad	flatbuffers/flatbuffers.h	/^  void Pad(size_t num_bytes) { buf_.fill(num_bytes); }$/;"	f	class:flatbuffers::FlatBufferBuilder
+PaddingBytes	flatbuffers/flatbuffers.h	/^inline size_t PaddingBytes(size_t buf_size, size_t scalar_size) {$/;"	f	namespace:flatbuffers
+PopBytes	flatbuffers/flatbuffers.h	/^  void PopBytes(size_t amount) { buf_.pop(amount); }$/;"	f	class:flatbuffers::FlatBufferBuilder
+PreAlign	flatbuffers/flatbuffers.h	/^  template<typename T> void PreAlign(size_t len) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+PreAlign	flatbuffers/flatbuffers.h	/^  void PreAlign(size_t len, size_t alignment) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+PushBytes	flatbuffers/flatbuffers.h	/^  void PushBytes(const uint8_t *bytes, size_t size) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+PushElement	flatbuffers/flatbuffers.h	/^  template<typename T> uoffset_t PushElement(Offset<T> off) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+PushElement	flatbuffers/flatbuffers.h	/^  template<typename T> uoffset_t PushElement(T element) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+Q_	mf.h	/^    arma::mat Q_;   \/\/ n_feat_ X n_items_ latent matrix $/;"	m	struct:pug::MF
+Rating	mf.h	/^        Rating(uint32_t uidx=0, uint32_t iidx=0, float rate=0) : uidx_(uidx), iidx_(iidx), rate_(rate) {}$/;"	f	struct:pug::MF::Rating
+Rating	mf.h	/^    struct Rating$/;"	s	struct:pug::MF
+Rating	mf_data.h	/^        Rating(uint32_t uidx=0, uint32_t iidx=0, float rate=0) : uidx_(uidx), iidx_(iidx), rate_(rate) {}$/;"	f	struct:pug::MFData::Rating
+Rating	mf_data.h	/^    struct Rating$/;"	s	struct:pug::MFData
+RatingP	mf.h	/^    typedef std::shared_ptr<Rating> RatingP;$/;"	t	struct:pug::MF
+RatingP	mf_data.h	/^    typedef std::shared_ptr<Rating> RatingP;$/;"	t	struct:pug::MFData
+Read	flatbuffers/flatbuffers.h	/^  static return_type Read(const uint8_t *p, uoffset_t i) {$/;"	f	struct:flatbuffers::IndirectHelper
+ReadScalar	flatbuffers/flatbuffers.h	/^template<typename T> T ReadScalar(const void *p) {$/;"	f	namespace:flatbuffers
+ReferTo	flatbuffers/flatbuffers.h	/^  uoffset_t ReferTo(uoffset_t off) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+Required	flatbuffers/flatbuffers.h	/^  template<typename T> void Required(Offset<T> table, voffset_t field) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+ReserveElements	flatbuffers/flatbuffers.h	/^  uint8_t *ReserveElements(size_t len, size_t elemsize) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+STRUCT_END	flatbuffers/flatbuffers.h	/^  #define STRUCT_END(/;"	d
+SetField	flatbuffers/flatbuffers.h	/^  template<typename T> void SetField(voffset_t field, T val) {$/;"	f	class:flatbuffers::Table
+StartStruct	flatbuffers/flatbuffers.h	/^  uoffset_t StartStruct(size_t alignment) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+StartTable	flatbuffers/flatbuffers.h	/^  uoffset_t StartTable() {$/;"	f	class:flatbuffers::FlatBufferBuilder
+StartVector	flatbuffers/flatbuffers.h	/^  void StartVector(size_t len, size_t elemsize) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+String	flatbuffers/flatbuffers.h	/^struct String : public Vector<char> {$/;"	s	namespace:flatbuffers
+Struct	flatbuffers/flatbuffers.h	/^class Struct {$/;"	c	namespace:flatbuffers
+Table	flatbuffers/flatbuffers.h	/^class Table {$/;"	c	namespace:flatbuffers
+TrackField	flatbuffers/flatbuffers.h	/^  void TrackField(voffset_t field, uoffset_t off) {$/;"	f	class:flatbuffers::FlatBufferBuilder
+Union	flatbuffers/flatbuffers.h	/^  Offset<void> Union() const { return Offset<void>(o); }$/;"	f	struct:flatbuffers::Offset
+Vector	flatbuffers/flatbuffers.h	/^template<typename T> class Vector {$/;"	c	namespace:flatbuffers
+VectorIterator	flatbuffers/flatbuffers.h	/^  VectorIterator(VectorIterator &&other) : data_(std::move(other.data_)) {}$/;"	f	struct:flatbuffers::VectorIterator
+VectorIterator	flatbuffers/flatbuffers.h	/^  VectorIterator(const VectorIterator &other) : data_(other.data_) {}$/;"	f	struct:flatbuffers::VectorIterator
+VectorIterator	flatbuffers/flatbuffers.h	/^  VectorIterator(const uint8_t *data, uoffset_t i) :$/;"	f	struct:flatbuffers::VectorIterator
+VectorIterator	flatbuffers/flatbuffers.h	/^struct VectorIterator : public$/;"	s	namespace:flatbuffers
+Verifier	flatbuffers/flatbuffers.h	/^  Verifier(const uint8_t *buf, size_t buf_len, size_t _max_depth = 64,$/;"	f	class:flatbuffers::Verifier
+Verifier	flatbuffers/flatbuffers.h	/^class Verifier {$/;"	c	namespace:flatbuffers
+Verify	flatbuffers/flatbuffers.h	/^  bool Verify(const String *str) const {$/;"	f	class:flatbuffers::Verifier
+Verify	flatbuffers/flatbuffers.h	/^  bool Verify(const void *elem, size_t elem_len) const {$/;"	f	class:flatbuffers::Verifier
+Verify	flatbuffers/flatbuffers.h	/^  template<typename T> bool Verify(const Vector<T> *vec) const {$/;"	f	class:flatbuffers::Verifier
+Verify	flatbuffers/flatbuffers.h	/^  template<typename T> bool Verify(const void *elem) const {$/;"	f	class:flatbuffers::Verifier
+VerifyBuffer	flatbuffers/flatbuffers.h	/^  template<typename T> bool VerifyBuffer() {$/;"	f	class:flatbuffers::Verifier
+VerifyComplexity	flatbuffers/flatbuffers.h	/^  bool VerifyComplexity() {$/;"	f	class:flatbuffers::Verifier
+VerifyField	flatbuffers/flatbuffers.h	/^  template<typename T> bool VerifyField(const Verifier &verifier,$/;"	f	class:flatbuffers::Table
+VerifyFieldRequired	flatbuffers/flatbuffers.h	/^  template<typename T> bool VerifyFieldRequired(const Verifier &verifier,$/;"	f	class:flatbuffers::Table
+VerifyTable	flatbuffers/flatbuffers.h	/^  template<typename T> bool VerifyTable(const T *table) {$/;"	f	class:flatbuffers::Verifier
+VerifyTableStart	flatbuffers/flatbuffers.h	/^  bool VerifyTableStart(Verifier &verifier) const {$/;"	f	class:flatbuffers::Table
+VerifyVector	flatbuffers/flatbuffers.h	/^  bool VerifyVector(const uint8_t *vec, size_t elem_size,$/;"	f	class:flatbuffers::Verifier
+VerifyVectorOfStrings	flatbuffers/flatbuffers.h	/^  bool VerifyVectorOfStrings(const Vector<Offset<String>> *vec) const {$/;"	f	class:flatbuffers::Verifier
+VerifyVectorOfTables	flatbuffers/flatbuffers.h	/^  template<typename T> bool VerifyVectorOfTables(const Vector<Offset<T>> *vec) {$/;"	f	class:flatbuffers::Verifier
+WriteScalar	flatbuffers/flatbuffers.h	/^template<typename T> void WriteScalar(void *p, T t) {$/;"	f	namespace:flatbuffers
+begin	flatbuffers/flatbuffers.h	/^  const_iterator begin() const { return const_iterator(Data(), 0); }$/;"	f	class:flatbuffers::Vector
+begin	flatbuffers/flatbuffers.h	/^  iterator begin() { return iterator(Data(), 0); }$/;"	f	class:flatbuffers::Vector
+buf_	flatbuffers/flatbuffers.h	/^  const uint8_t *buf_;$/;"	m	class:flatbuffers::Verifier
+buf_	flatbuffers/flatbuffers.h	/^  uint8_t *buf_;$/;"	m	class:flatbuffers::vector_downward
+buf_	flatbuffers/flatbuffers.h	/^  vector_downward buf_;$/;"	m	class:flatbuffers::FlatBufferBuilder
+c_str	flatbuffers/flatbuffers.h	/^  const char *c_str() const { return reinterpret_cast<const char *>(Data()); }$/;"	f	struct:flatbuffers::String
+clear	flatbuffers/flatbuffers.h	/^  void clear() { cur_ = buf_ + reserved_; }$/;"	f	class:flatbuffers::vector_downward
+comp_rmse	mf.h	/^    inline float comp_rmse(const std::vector<RatingP> &dataset)$/;"	f	struct:pug::MF
+const_iterator	flatbuffers/flatbuffers.h	/^  typedef VectorIterator<T, true> const_iterator;$/;"	t	class:flatbuffers::Vector
+cur_	flatbuffers/flatbuffers.h	/^  uint8_t *cur_;  \/\/ Points at location between empty (below) and used (above).$/;"	m	class:flatbuffers::vector_downward
+data	flatbuffers/flatbuffers.h	/^  uint8_t *data() const { return cur_; }$/;"	f	class:flatbuffers::vector_downward
+data_	flatbuffers/flatbuffers.h	/^  const uint8_t *data_;$/;"	m	struct:flatbuffers::VectorIterator
+data_	flatbuffers/flatbuffers.h	/^  uint8_t data_[1];$/;"	m	class:flatbuffers::Struct
+data_	flatbuffers/flatbuffers.h	/^  uint8_t data_[1];$/;"	m	class:flatbuffers::Table
+data_at	flatbuffers/flatbuffers.h	/^  uint8_t *data_at(size_t offset) { return buf_ + reserved_ - offset; }$/;"	f	class:flatbuffers::vector_downward
+depth_	flatbuffers/flatbuffers.h	/^  size_t depth_;$/;"	m	class:flatbuffers::Verifier
+element_stride	flatbuffers/flatbuffers.h	/^  static const size_t element_stride = sizeof(T);$/;"	m	struct:flatbuffers::IndirectHelper
+element_stride	flatbuffers/flatbuffers.h	/^  static const size_t element_stride = sizeof(uoffset_t);$/;"	m	struct:flatbuffers::IndirectHelper
+end	flatbuffers/flatbuffers.h	/^  const_iterator end() const { return const_iterator(Data(), length_); }$/;"	f	class:flatbuffers::Vector
+end	flatbuffers/flatbuffers.h	/^  iterator end() { return iterator(Data(), length_); }$/;"	f	class:flatbuffers::Vector
+end_	flatbuffers/flatbuffers.h	/^  const uint8_t *end_;$/;"	m	class:flatbuffers::Verifier
+fill	flatbuffers/flatbuffers.h	/^  void fill(size_t zero_pad_bytes) {$/;"	f	class:flatbuffers::vector_downward
+flatbuffer_version_string	flatbuffers/flatbuffers.h	/^volatile __attribute__((weak)) const char *flatbuffer_version_string =$/;"	m	namespace:flatbuffers
+flatbuffers	flatbuffers/flatbuffers.h	/^namespace flatbuffers {$/;"	n
+force_defaults_	flatbuffers/flatbuffers.h	/^  bool force_defaults_;  \/\/ Serialize values equal to their defaults anyway.$/;"	m	class:flatbuffers::FlatBufferBuilder
+growth_policy	flatbuffers/flatbuffers.h	/^  size_t growth_policy(size_t bytes) {$/;"	f	class:flatbuffers::vector_downward
+id	flatbuffers/flatbuffers.h	/^    voffset_t id;$/;"	m	struct:flatbuffers::FlatBufferBuilder::FieldLoc
+iid_to_iidx_	mf.h	/^    std::unordered_map<uint32_t,uint32_t> iid_to_iidx_;$/;"	m	struct:pug::MF
+iid_to_iidx_	mf_data.h	/^    std::unordered_map<uint32_t,uint32_t> iid_to_iidx_;$/;"	m	struct:pug::MFData
+iidx_	mf.h	/^        uint32_t iidx_;$/;"	m	struct:pug::MF::Rating
+iidx_	mf_data.h	/^        uint32_t iidx_;$/;"	m	struct:pug::MFData::Rating
+is_number	pug_utils.h	/^    bool is_number(const std::string& s)$/;"	f	namespace:pug_utils
+iterator	flatbuffers/flatbuffers.h	/^  typedef VectorIterator<T, false> iterator;$/;"	t	class:flatbuffers::Vector
+kFileIdentifierLength	flatbuffers/flatbuffers.h	/^  static const size_t kFileIdentifierLength = 4;$/;"	m	class:flatbuffers::FlatBufferBuilder
+largest_scalar_t	flatbuffers/flatbuffers.h	/^typedef uintmax_t largest_scalar_t;$/;"	t	namespace:flatbuffers
+learn	mf_learner.h	/^    void learn(const a)$/;"	f	struct:pug::MFLearner
+length_	flatbuffers/flatbuffers.h	/^  uoffset_t length_;$/;"	m	class:flatbuffers::Vector
+load_from_file	mf.h	/^    inline void load_from_file(const std::string& filepath, const std::string& delim)$/;"	f	struct:pug::MF
+load_from_file	mf_data.h	/^    inline void load_from_file(const std::string& filepath, const std::string& delim)$/;"	f	struct:pug::MFData
+lookup	mf.h	/^    void lookup(std::vector<RatingP> &ratings) $/;"	f	struct:pug::MF
+lookup	mf_data.h	/^    void lookup(std::vector<RatingP>& ratings) {$/;"	f	struct:pug::MFData
+main	main.cc	/^int main(int argc, const char *argv[])$/;"	f
+make_space	flatbuffers/flatbuffers.h	/^  uint8_t *make_space(size_t len) {$/;"	f	class:flatbuffers::vector_downward
+max_depth_	flatbuffers/flatbuffers.h	/^  size_t max_depth_;$/;"	m	class:flatbuffers::Verifier
+max_tables_	flatbuffers/flatbuffers.h	/^  size_t max_tables_;$/;"	m	class:flatbuffers::Verifier
+mean_rate_	mf.h	/^    float mean_rate_ = 0.0;$/;"	m	struct:pug::MF
+mf_test	mf_data.h	/^    void mf_test()$/;"	f	struct:pug::MFData
+minalign_	flatbuffers/flatbuffers.h	/^  size_t minalign_;$/;"	m	class:flatbuffers::FlatBufferBuilder
+n_feat_	mf.h	/^    int n_feat_;$/;"	m	struct:pug::MF
+n_items_	mf.h	/^    uint32_t n_items_;$/;"	m	struct:pug::MF
+n_items_	mf_data.h	/^    uint32_t n_items_;$/;"	m	struct:pug::MFData
+n_ratings_	mf.h	/^    uint32_t n_ratings_;$/;"	m	struct:pug::MF
+n_ratings_	mf_data.h	/^    uint32_t n_ratings_;$/;"	m	struct:pug::MFData
+n_test_	mf.h	/^    uint32_t n_test_;$/;"	m	struct:pug::MF
+n_test_	mf_data.h	/^    uint32_t n_test_;$/;"	m	struct:pug::MFData
+n_train_	mf.h	/^    uint32_t n_train_;$/;"	m	struct:pug::MF
+n_train_	mf_data.h	/^    uint32_t n_train_;$/;"	m	struct:pug::MFData
+n_users_	mf.h	/^    uint32_t n_users_;$/;"	m	struct:pug::MF
+n_users_	mf_data.h	/^    uint32_t n_users_;$/;"	m	struct:pug::MFData
+num_tables_	flatbuffers/flatbuffers.h	/^  size_t num_tables_;$/;"	m	class:flatbuffers::Verifier
+o	flatbuffers/flatbuffers.h	/^  uoffset_t o;$/;"	m	struct:flatbuffers::Offset
+off	flatbuffers/flatbuffers.h	/^    uoffset_t off;$/;"	m	struct:flatbuffers::FlatBufferBuilder::FieldLoc
+offsetbuf_	flatbuffers/flatbuffers.h	/^  std::vector<FieldLoc> offsetbuf_;$/;"	m	class:flatbuffers::FlatBufferBuilder
+operator !=	flatbuffers/flatbuffers.h	/^  bool operator!=(const VectorIterator& other) const {$/;"	f	struct:flatbuffers::VectorIterator
+operator *	flatbuffers/flatbuffers.h	/^  typename super_type::value_type operator *() const {$/;"	f	struct:flatbuffers::VectorIterator
+operator ++	flatbuffers/flatbuffers.h	/^  VectorIterator &operator++() {$/;"	f	struct:flatbuffers::VectorIterator
+operator ++	flatbuffers/flatbuffers.h	/^  VectorIterator operator++(int) {$/;"	f	struct:flatbuffers::VectorIterator
+operator -	flatbuffers/flatbuffers.h	/^  ptrdiff_t operator-(const VectorIterator& other) const {$/;"	f	struct:flatbuffers::VectorIterator
+operator ->	flatbuffers/flatbuffers.h	/^  typename super_type::value_type operator->() const {$/;"	f	struct:flatbuffers::VectorIterator
+operator =	flatbuffers/flatbuffers.h	/^  VectorIterator &operator=(VectorIterator &&other) {$/;"	f	struct:flatbuffers::VectorIterator
+operator =	flatbuffers/flatbuffers.h	/^  VectorIterator &operator=(const VectorIterator &other) {$/;"	f	struct:flatbuffers::VectorIterator
+operator ==	flatbuffers/flatbuffers.h	/^  bool operator==(const VectorIterator& other) const {$/;"	f	struct:flatbuffers::VectorIterator
+pop	flatbuffers/flatbuffers.h	/^  void pop(size_t bytes_to_remove) { cur_ += bytes_to_remove; }$/;"	f	class:flatbuffers::vector_downward
+pug	mf.h	/^namespace pug {$/;"	n
+pug	mf_data.h	/^namespace pug {$/;"	n
+pug	mf_learner.h	/^namespace pug {$/;"	n
+pug_utils	pug_utils.h	/^namespace pug_utils {$/;"	n
+push	flatbuffers/flatbuffers.h	/^  void push(const uint8_t *bytes, size_t num) {$/;"	f	class:flatbuffers::vector_downward
+rate_	mf.h	/^        float rate_;$/;"	m	struct:pug::MF::Rating
+rate_	mf_data.h	/^        float rate_;$/;"	m	struct:pug::MFData::Rating
+ratings_	mf.h	/^    std::vector<RatingP> ratings_;$/;"	m	struct:pug::MF
+ratings_	mf_data.h	/^    std::vector<RatingP> ratings_;$/;"	m	struct:pug::MFData
+reserved_	flatbuffers/flatbuffers.h	/^  size_t reserved_;$/;"	m	class:flatbuffers::vector_downward
+return_type	flatbuffers/flatbuffers.h	/^  typedef T return_type;$/;"	t	struct:flatbuffers::IndirectHelper
+return_type	flatbuffers/flatbuffers.h	/^  typedef const T *return_type;$/;"	t	struct:flatbuffers::IndirectHelper
+return_type	flatbuffers/flatbuffers.h	/^  typedef typename IndirectHelper<T>::return_type return_type;$/;"	t	class:flatbuffers::Vector
+size	flatbuffers/flatbuffers.h	/^  uoffset_t size() const { return EndianScalar(length_); }$/;"	f	class:flatbuffers::Vector
+size	flatbuffers/flatbuffers.h	/^  uoffset_t size() const {$/;"	f	class:flatbuffers::vector_downward
+soffset_t	flatbuffers/flatbuffers.h	/^typedef int32_t soffset_t;$/;"	t	namespace:flatbuffers
+split_train_test	mf.h	/^    inline void split_train_test(const float trainset_ratio)$/;"	f	struct:pug::MF
+split_train_test	mf_data.h	/^    inline void split_train_test()$/;"	f	struct:pug::MFData
+super_type	flatbuffers/flatbuffers.h	/^    typename IndirectHelper<T>::return_type>::type, uoffset_t> super_type;$/;"	t	struct:flatbuffers::VectorIterator
+testset_	mf.h	/^    std::vector<RatingP> testset_;$/;"	m	struct:pug::MF
+testset_	mf_data.h	/^    std::vector<RatingP> testset_;$/;"	m	struct:pug::MFData
+train	mf.h	/^    inline void train(const int n_feat, const float stepsz, const float reg, const float momentum, uint32_t round_len, const size_t maxsec, const size_t maxiter, const int itv_test, const int itv_save)$/;"	f	struct:pug::MF
+trainset_	mf.h	/^    std::vector<RatingP> trainset_;$/;"	m	struct:pug::MF
+trainset_	mf_data.h	/^    std::vector<RatingP> trainset_;$/;"	m	struct:pug::MFData
+uid_to_uidx_	mf.h	/^    std::unordered_map<uint32_t,uint32_t> uid_to_uidx_;$/;"	m	struct:pug::MF
+uid_to_uidx_	mf_data.h	/^    std::unordered_map<uint32_t,uint32_t> uid_to_uidx_;$/;"	m	struct:pug::MFData
+uidx_	mf.h	/^        uint32_t uidx_;$/;"	m	struct:pug::MF::Rating
+uidx_	mf_data.h	/^        uint32_t uidx_;$/;"	m	struct:pug::MFData::Rating
+uoffset_t	flatbuffers/flatbuffers.h	/^typedef uint32_t uoffset_t;$/;"	t	namespace:flatbuffers
+vector_downward	flatbuffers/flatbuffers.h	/^  explicit vector_downward(size_t initial_size)$/;"	f	class:flatbuffers::vector_downward
+vector_downward	flatbuffers/flatbuffers.h	/^class vector_downward {$/;"	c	namespace:flatbuffers
+voffset_t	flatbuffers/flatbuffers.h	/^typedef uint16_t voffset_t;$/;"	t	namespace:flatbuffers
+vtables_	flatbuffers/flatbuffers.h	/^  std::vector<uoffset_t> vtables_;  \/\/ todo: Could make this into a map?$/;"	m	class:flatbuffers::FlatBufferBuilder
+~vector_downward	flatbuffers/flatbuffers.h	/^  ~vector_downward() { delete[] buf_; }$/;"	f	class:flatbuffers::vector_downward
