@@ -8,7 +8,10 @@ int main(int argc, const char *argv[])
         return -1;
     }
     pug::MF mf; 
-    mf.load_from_file(std::string(argv[1]), "::");
+    /*
+     *mf.load_from_file(std::string(argv[1]), "::");
+     */
+    mf.load("dataset.bin");
 
     // parameters
     int n_feat = 10;
@@ -17,11 +20,15 @@ int main(int argc, const char *argv[])
     float momentum = 0.9;
     uint32_t round_len = 100000000;
     size_t maxsec = 10000000;
-    size_t maxiter = 100000;
+    size_t maxiter = 10;
     int itv_test = 1;
     int itv_save = 1;
 
     mf.train(n_feat, stepsz, reg, momentum, round_len, maxsec, maxiter, itv_test, itv_save);
+
+    /*
+     *mf.save("dataset.bin");
+     */
 
     return 0;   
 };

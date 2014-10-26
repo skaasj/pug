@@ -1,0 +1,18 @@
+namespace pug;
+
+table Rating {
+  uidx: uint;
+  iidx: uint;
+  rate: float;
+}
+
+table Dataset {
+  trainset: [Rating];
+  testset: [Rating];
+  n_train: uint;
+  n_test: uint;
+  n_user: uint;
+  n_item: uint;
+}
+
+root_type Dataset;

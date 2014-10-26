@@ -16,6 +16,8 @@ all: run_mf
 run_mf: main.cc
 	$(CXX) $(CXXFLAGS) -o $@ $< $(LIB_FLAGS)
 	
+.PHONY: = clean
+
 clean:
 	rm -rf run_mf
 

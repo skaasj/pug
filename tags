@@ -75,7 +75,7 @@ OPT	Makefile	/^OPT = -O2 -std=c++11 -march=native -funroll-loops$/;"	m
 Offset	flatbuffers/flatbuffers.h	/^  Offset() : o(0) {}$/;"	f	struct:flatbuffers::Offset
 Offset	flatbuffers/flatbuffers.h	/^  Offset(uoffset_t _o) : o(_o) {}$/;"	f	struct:flatbuffers::Offset
 Offset	flatbuffers/flatbuffers.h	/^template<typename T> struct Offset {$/;"	s	namespace:flatbuffers
-P_	mf.h	/^    arma::mat P_;   \/\/ n_feat_ X n_users_ latent matrix$/;"	m	struct:pug::MF
+P_	mf.h	/^    arma::mat P_; \/\/ n_feat_ X n_users_ latent matrix$/;"	m	struct:pug::MF
 Pad	flatbuffers/flatbuffers.h	/^  void Pad(size_t num_bytes) { buf_.fill(num_bytes); }$/;"	f	class:flatbuffers::FlatBufferBuilder
 PaddingBytes	flatbuffers/flatbuffers.h	/^inline size_t PaddingBytes(size_t buf_size, size_t scalar_size) {$/;"	f	namespace:flatbuffers
 PopBytes	flatbuffers/flatbuffers.h	/^  void PopBytes(size_t amount) { buf_.pop(amount); }$/;"	f	class:flatbuffers::FlatBufferBuilder
@@ -84,7 +84,7 @@ PreAlign	flatbuffers/flatbuffers.h	/^  void PreAlign(size_t len, size_t alignmen
 PushBytes	flatbuffers/flatbuffers.h	/^  void PushBytes(const uint8_t *bytes, size_t size) {$/;"	f	class:flatbuffers::FlatBufferBuilder
 PushElement	flatbuffers/flatbuffers.h	/^  template<typename T> uoffset_t PushElement(Offset<T> off) {$/;"	f	class:flatbuffers::FlatBufferBuilder
 PushElement	flatbuffers/flatbuffers.h	/^  template<typename T> uoffset_t PushElement(T element) {$/;"	f	class:flatbuffers::FlatBufferBuilder
-Q_	mf.h	/^    arma::mat Q_;   \/\/ n_feat_ X n_items_ latent matrix $/;"	m	struct:pug::MF
+Q_	mf.h	/^    arma::mat Q_; \/\/ n_feat_ X n_items_ latent matrix $/;"	m	struct:pug::MF
 Rating	mf.h	/^        Rating(uint32_t uidx=0, uint32_t iidx=0, float rate=0) : uidx_(uidx), iidx_(iidx), rate_(rate) {}$/;"	f	struct:pug::MF::Rating
 Rating	mf.h	/^    struct Rating$/;"	s	struct:pug::MF
 Rating	mf_data.h	/^        Rating(uint32_t uidx=0, uint32_t iidx=0, float rate=0) : uidx_(uidx), iidx_(iidx), rate_(rate) {}$/;"	f	struct:pug::MFData::Rating
@@ -134,7 +134,7 @@ buf_	flatbuffers/flatbuffers.h	/^  uint8_t *buf_;$/;"	m	class:flatbuffers::vecto
 buf_	flatbuffers/flatbuffers.h	/^  vector_downward buf_;$/;"	m	class:flatbuffers::FlatBufferBuilder
 c_str	flatbuffers/flatbuffers.h	/^  const char *c_str() const { return reinterpret_cast<const char *>(Data()); }$/;"	f	struct:flatbuffers::String
 clear	flatbuffers/flatbuffers.h	/^  void clear() { cur_ = buf_ + reserved_; }$/;"	f	class:flatbuffers::vector_downward
-comp_rmse	mf.h	/^    inline float comp_rmse(const std::vector<RatingP> &dataset)$/;"	f	struct:pug::MF
+compute_rmse	mf.h	/^    inline float compute_rmse(const std::vector<RatingP> &dataset)$/;"	f	struct:pug::MF
 const_iterator	flatbuffers/flatbuffers.h	/^  typedef VectorIterator<T, true> const_iterator;$/;"	t	class:flatbuffers::Vector
 cur_	flatbuffers/flatbuffers.h	/^  uint8_t *cur_;  \/\/ Points at location between empty (below) and used (above).$/;"	m	class:flatbuffers::vector_downward
 data	flatbuffers/flatbuffers.h	/^  uint8_t *data() const { return cur_; }$/;"	f	class:flatbuffers::vector_downward
@@ -164,6 +164,7 @@ kFileIdentifierLength	flatbuffers/flatbuffers.h	/^  static const size_t kFileIde
 largest_scalar_t	flatbuffers/flatbuffers.h	/^typedef uintmax_t largest_scalar_t;$/;"	t	namespace:flatbuffers
 learn	mf_learner.h	/^    void learn(const a)$/;"	f	struct:pug::MFLearner
 length_	flatbuffers/flatbuffers.h	/^  uoffset_t length_;$/;"	m	class:flatbuffers::Vector
+load	mf.h	/^    int load(const std::string& file) $/;"	f	struct:pug::MF
 load_from_file	mf.h	/^    inline void load_from_file(const std::string& filepath, const std::string& delim)$/;"	f	struct:pug::MF
 load_from_file	mf_data.h	/^    inline void load_from_file(const std::string& filepath, const std::string& delim)$/;"	f	struct:pug::MFData
 lookup	mf.h	/^    void lookup(std::vector<RatingP> &ratings) $/;"	f	struct:pug::MF
@@ -213,6 +214,7 @@ reserved_	flatbuffers/flatbuffers.h	/^  size_t reserved_;$/;"	m	class:flatbuffer
 return_type	flatbuffers/flatbuffers.h	/^  typedef T return_type;$/;"	t	struct:flatbuffers::IndirectHelper
 return_type	flatbuffers/flatbuffers.h	/^  typedef const T *return_type;$/;"	t	struct:flatbuffers::IndirectHelper
 return_type	flatbuffers/flatbuffers.h	/^  typedef typename IndirectHelper<T>::return_type return_type;$/;"	t	class:flatbuffers::Vector
+save	mf.h	/^    int save(const std::string& file) const $/;"	f	struct:pug::MF
 size	flatbuffers/flatbuffers.h	/^  uoffset_t size() const { return EndianScalar(length_); }$/;"	f	class:flatbuffers::Vector
 size	flatbuffers/flatbuffers.h	/^  uoffset_t size() const {$/;"	f	class:flatbuffers::vector_downward
 soffset_t	flatbuffers/flatbuffers.h	/^typedef int32_t soffset_t;$/;"	t	namespace:flatbuffers
